@@ -1,0 +1,105 @@
+.contant {
+    width: 815px;
+    /*float: left;*/
+    /*width: 980px;*/
+    margin: 30px auto 0;
+    padding-bottom: 60px;
+    overflow: hidden;
+    zoom: 1;
+}
+.contant {
+    width: 730px;
+    height: 631px;
+    overflow: hidden;
+    margin: 100px auto 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #fff;
+}
+
+.contant li {
+    height: 111px;
+    padding-left: 10px;
+}
+
+ul {
+    list-style: none;
+    display: block;
+    /*list-style-type: disc;*/
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+ul li {
+    padding: 9px 219px;
+    border-bottom: 1px solid #f4f4f4;
+    overflow: hidden;
+    zoom: 1;
+    padding-bottom: 18px;
+}
+ul .news .ranking {
+    width: 0px;
+    padding-left: 27px;
+    margin-right: 10px;
+    height: 20px;
+    /*margin-right: 15px;*/
+    float: left;
+    position: relative;
+}
+ul .news .content {
+    width: 587px;
+    line-height: 20px;
+    float: left;
+    /*width: 490px;*/
+    margin-right: 10px
+}
+ul .news .time {
+    padding-top: 0;
+    float: left;
+    width: 150px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    line-height: 20px;
+    /*padding-top: 37px;*/
+}
+ul .news .ranking i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-style: normal;
+    width: 18px;
+    text-align: center;
+    line-height: 18px;
+    color: #fff;
+    font-size: 16px;
+    /*background: url(../images/xin_ixo.gif) 0 0 no-repeat;*/
+}
+ul .news .content p {
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 20px;
+}
+ul .news .content p a {
+    color: #333;
+    text-decoration: none;
+    outline: none;
+}
+
+/*事件*/
+ul li .content p a:hover{
+    color: red;
+}
+
+/*对li 和 span 进行设置*/
+.contant li:hover{
+    background-color: #f4f4f4;
+    cursor: pointer;
+}

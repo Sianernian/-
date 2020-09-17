@@ -1,0 +1,14 @@
+
+
+div.panel, p.flip {
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+    background: #e5eecc;
+    border: solid 1px #c3c3c3;
+    /*border-image: url("/views/img/初音.jpg");*/
+}
+div.uldiv {
+    height: 120px;
+    display: none;
+}

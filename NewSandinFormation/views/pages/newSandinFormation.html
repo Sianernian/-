@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新闻资讯</title>
+    <script type="text/javascript" src="views/js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="views/js/Rotation.js" charset="utf-8"></script>
+    <script type="text/javascript" src="views/js/newsSlide.js" charset="utf-8"></script>
+    <script type="text/javascript" src="views/js/spild.js"></script>
+    <link rel="stylesheet" href="views/css/Rotation.css"/>
+    <link rel="stylesheet" href="views/css/news.css"/>
+    <link rel="stylesheet" href="views/css/foot.css"/>
+    <link rel="stylesheet" href="views/css/spild.css">
+</head>
+<body>
+    <div id="box">
+        <div id="imgDiv">
+            <img id="leftImg" />
+            <img id="centerImg" />
+            <img id="rightImg" />
+        </div>
+        <span id="leftBtn"></span>
+        <span id="rightBtn"></span>
+        <span id="circleSpan"></span>
+    </div>
+    <div class="contant">
+        <div id="spild">
+
+        <ul>
+            <div class="uldiv">
+
+            </div>
+            {{range .New.Result.Data}}
+
+                <li class="news">
+                    <spen id="ranking">
+                        <img src="{{.Thumbnail_pic_s}}" style="width: 56px; height: 48px">
+                    </spen>
+                    <span class="content">
+					<p>
+						<a href="{{.Url}}">{{.Title}}</a>
+					</p>
+				</span>
+                    <span class="time">
+					"{{.Date}}"
+				</span>
+                </li>
+
+            {{end}}
+
+
+        </ul>
+        </div>
+    </div>
+{{/*    <div class="foot">*/}}
+{{/*       */}}
+{{/*    </div>*/}}
+</body>
+</html>

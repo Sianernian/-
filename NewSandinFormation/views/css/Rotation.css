@@ -1,0 +1,88 @@
+body {
+    margin: 0px;
+    backgraound:url("/views/img/icon.jpg");
+    /*background-color: red;*/
+}
+
+#box {
+    width: 520px;
+    height: 280px;
+    margin: 60px auto;
+    position: relative;
+}
+
+#imgDiv {
+    width: 520px;
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+#imgDiv img {
+    position: absolute;
+    width: 520px;
+    height: 280px;
+}
+
+#leftImg {
+    left: -520px;
+}
+
+#centerImg {
+    left: 0px;
+}
+
+#rightImg {
+    left: 520px;
+}
+
+#leftBtn {
+    display: none;
+    width: 71px;
+    height: 71px;
+    position: absolute;
+    left: -35px;
+    top: 105px;
+    /*background-image: ;*/
+    background-position-x: 71px;
+}
+
+#leftBtn:hover {
+    background-postion-x: 0px;
+}
+
+#rightBtn {
+    display: none;
+    width: 71px;
+    height: 71px;
+    position: absolute;
+    left: 485px;
+    top: 105px;
+    /*background-image: url(../img/but.png);*/
+    background-position: 71px 71px;
+}
+
+#rightBtn:hover {
+    background-position-x: 0px;
+}
+
+#circleSpan {
+    display: block;
+    position: absolute;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    left: 50px;
+    top: 240px;
+}
+
+#circleSpan span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: white;
+    margin: 10px 5px 10px 5px;
+    float: left;
+}
