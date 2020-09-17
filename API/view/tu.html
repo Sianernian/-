@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>index</title>
+    <style type="text/css">
+        body,ul,li{ margin:0px; padding:0px;}
+        body{ background:url(./photo/icon.jpg) center; }
+        #banner{
+            width:730px;
+            height:390px;
+
+            margin:100px auto 0px;
+            /*background-image:url(img/1.png);*/
+            border-radius:10px;
+            box-shadow:0px 0px 15px #fff;
+        }
+        #btn{
+            width:55px;
+            height:280px;
+            position:fixed;
+            right:30px;
+            top:150px;
+        }
+        #btn ul li{
+            list-style:none;
+            width:55px; height:55px;
+            border-radius:100%;
+            margin:10px 0;
+            /*background-image:url(img/bg.jpg);*/
+            cursor:pointer;
+        }
+    </style>
+    <script type="text/javascript" src="js/jquery-3.1.1.js">
+    </script>
+    <script type="text/javascript">
+        $(function(){
+            var indexc=0; var play=null;
+            $("#btn ul li").click(function(){
+                clearInterval(play);
+                indexc=$(this).index();
+
+                move();
+                play=play=setInterval(function()
+                {
+                    indexc++;
+                    indexc%=4;
+                    move();
+                },3000)    ;
+            });
+
+            play=setInterval(function()
+            {
+
+                indexc++;
+                indexc%=4;
+                move();
+
+            },3000)    ;
+
+            function move()
+            {
+                $("#btn ul li").eq(indexc).animate({'background-position-x':'-80px'},500).siblings().css('background-position-x','0');
+
+                $("#banner").append( {{range .Info}}{{.Id}}{{.Title}}{{end}})
+            }
+        });
+    </script>
+</head>
+
+<body>
+<div id="banner">
+</div>
+<div id="btn">
+    <ul>
+        <li></li>
+        <li style="background-position-y:56px;"></li>
+        <li  style="background-position-y:126px;"></li>
+        <li style="background-position-y:-70px;"></li>
+    </ul>
+</div>
+</body>
+</html>
